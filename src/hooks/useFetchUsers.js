@@ -1,6 +1,14 @@
+/*
+  Custom hook that fetches users from jsonplaceholder.typicode.com on mount.
+  useFetchUsers: returns an object with users array, error message, and loading state.
+
+  useEffect: used to trigger the fetch on component mount.
+  Encapsulates fetch logic inside an async function within useEffect.
+  useState: manages users, error, and loading states.
+*/
+
 import { useEffect, useState } from "react";
 
-// Custom hook to fetch users from an API
 function useFetchUsers() {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");

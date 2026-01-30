@@ -1,6 +1,15 @@
+/*
+  Component Definition for User Card Display Container
+
+  filteredUsers: array of user objects to display.
+  loading: boolean indicating if data is being fetched.
+  error: string containing any error message.
+  onCardClick: function to handle clicks on individual user cards.
+  onContainerClick: function to handle clicks on the container (to clear selection).
+*/
+
 import UserCard from "./UserCard";
 
-// Component Definition for User Card Display Container
 function UserCardContainer({ filteredUsers, loading, error, onCardClick, onContainerClick }) {
   return (
     <div className="card-container" onClick={onContainerClick}>

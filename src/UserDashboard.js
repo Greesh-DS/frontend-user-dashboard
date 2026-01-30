@@ -1,3 +1,16 @@
+/*
+  Main App component that composes hooks and components to display a user dashboard.
+  
+  useFetchUsers: custom hook to fetch user data from an API.
+  useFilterUsers: custom hook to filter users based on search input.
+  SearchBar: component for user search input.
+  userCardContainer: component to display user cards.
+  ErrorMessage: component to display error messages.
+  UserDetailsPanel: component to show detailed info about a selected user.
+  useState: manages local state for search input and selected user.
+  useRef: references the details panel for scrolling into view.
+*/
+
 import { useState, useRef } from "react";
 import useFetchUsers from "./hooks/useFetchUsers";
 import useFilterUsers from "./hooks/useFilterUsers";
@@ -27,7 +40,7 @@ function UserDashboard() {
 
       <ErrorMessage error={error} />
 
-      {!loading && !error && <SearchBar search={search} onSearchChange={setSearch} />}
+      {!loading && !error && <SearchBar search={search} onSearchChange={setSearch} onFocus={() => setSelectedUser(null)} />}
 
       <UserCardContainer
         filteredUsers={filteredUsers}

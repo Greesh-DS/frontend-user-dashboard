@@ -1,4 +1,10 @@
-// Component Definition for User Details Panel When a User is Selected
+/*
+  Component Definition for User Details Panel When a User is Selected.
+
+  onClose: function to clear the selected user.
+  selectedUser: object containing details of the selected user.
+*/
+
 function UserDetailsPanel({ selectedUser, onClose }) {
   if (!selectedUser) return null;
 
