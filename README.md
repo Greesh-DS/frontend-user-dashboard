@@ -91,7 +91,7 @@ src/
 ### ErrorMessage
 - Display API or network errors
 
-### Custom Hooks
+## Custom Hooks
 - **useFetchUsers** - Fetches from API, manages loading and error states
 - **useFilterUsers** - Filters users based on search term
 
