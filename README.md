@@ -1,6 +1,6 @@
 # Frontend User Dashboard
 
-A React applicatiopn to browse, search, and view details of users fetched from a public API with user details.
+A React application to browse, search, and view details of users fetched from a public API with user details.
 
 ## Features
 
@@ -9,10 +9,9 @@ A React applicatiopn to browse, search, and view details of users fetched from a
  - View detailed user information
  - Handles loading and API error
 
-## Tech Used
+## Technologies Used
 
-- React 18
-- JavaScript
+- React
 - HTML/CSS
 
 ### Prerequisites
